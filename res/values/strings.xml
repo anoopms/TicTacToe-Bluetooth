@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="AVANTAJ">Avantaj</string>
+    <string name="app_name">TicTacToe2P</string>
+    <string name="NO_DATA">No data</string>
+    
+
+	<string name="title_paired_devices">Paired devices</string>
+	<string name="title_other_devices">Other devices</string>
+	<string name="button_scan">Button scan</string>
+	
+	<string name="scanning">Scanning</string>
+	<string name="none_paired">None paired</string>
+	<string name="select_device">Select device</string>
+	<string name="none_found">None paired</string>
+	
+	<string name="bt_not_enabled_leaving">Blue tooth not enabling</string>
+	
+	<string name="not_connected">Blue tooth not connected</string>
+	<string name="start_game">Start game</string>
+	<string name="join_game">Join game</string>
+	
+	<string name="discoverable">Discoverable</string>
+	
+	<string name="hello">Hello World, TicTacToeActivity!</string>
+    <string name="NO_IMAGE">no image</string>
+    <string name="NEW_GAME">New game</string>
+    <string name="RESET_SCORE">Reset Score</string>
+	<string name="HAS_WON">has won !</string>
+	<string name="EMPTY"></string>
+	<string name="ZERO_INT">0</string>
+	<string name="SAVE">Save</string>
+	<string name="CANCEL">Cancel</string>
+	<string name="SELECT_BACKGROUND">Select Background</string>
+	<string name="SELECT_ICON">Select Icons</string>
+	
+</resources>

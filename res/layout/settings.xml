@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <Button
+            android:id="@+id/settings_button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SAVE"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/settings_button_bg"/>
+
+        <Button
+            android:id="@+id/settings_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CANCEL" 
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/settings_button_bg"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/settings_heading_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SELECT_BACKGROUND"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF000000"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/settings_header_bg"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/settings_bg_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            
+            >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+		<TextView
+            android:id="@+id/settings_heading_2"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/SELECT_ICON"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF000000"
+            android:gravity="center_vertical"
+            android:background="@drawable/settings_header_bg"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+        <ListView
+            android:id="@+id/settings_icon_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    
+    
+</LinearLayout>

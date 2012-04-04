@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+     android:id="@+id/mainLayout"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NEW_GAME" />
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" 
+            >
+			
+            <ImageView
+                    android:id="@+id/settings_selection"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:background="#FFFFFFFF"
+                    android:contentDescription="@string/NO_IMAGE"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/settings_icon"/>
+            
+            <!-- top icon to select the mark -->
+
+            <LinearLayout
+                android:id="@+id/select_mark_tick_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="4dp" >
+
+                <ImageView
+                    android:id="@+id/select_mark_tick_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:background="#FFFFFFFF"
+                    android:contentDescription="@string/NO_IMAGE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_mark_cross_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="4dp" >
+
+                <ImageView
+                    android:id="@+id/select_mark_cross_image" 
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:background="#FFFFFFFF"
+                    android:contentDescription="@string/NO_IMAGE"
+                    />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_winner_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Hello"
+        android:drawablePadding="10dp"
+        
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/ll_0_0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_0_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFFFF" 
+                    android:id="@+id/line_ver_1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_0_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_0_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFFFF" 
+                    android:id="@+id/line_ver_2"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_0_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_0_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#FFFFFFFF" 
+                android:id="@+id/line_hor_1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/ll_1_0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_1_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFFFF" 
+                    android:id="@+id/line_ver_3"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_1_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFFFF" 
+                    android:id="@+id/line_ver_4"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_1_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#FFFFFFFF" 
+                android:id="@+id/line_hor_2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/ll_2_0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_2_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFFFF" 
+                    android:id="@+id/line_ver_5"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_2_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFFFF" 
+                    android:id="@+id/line_ver_6"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_2_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/NO_IMAGE" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center" 
+        android:layout_marginBottom="5dp">
+		 <Button
+            android:id="@+id/reset_score_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/RESET_SCORE" />
+        <ImageView
+            android:id="@+id/score_icon_tick"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/NO_IMAGE"
+            />
+
+        <TextView
+            android:id="@+id/textView_tickScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ZERO_INT"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right" 
+            >
+
+            <TextView
+                android:id="@+id/textView_crossScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ZERO_INT"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/score_icon_cross"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/NO_IMAGE"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
